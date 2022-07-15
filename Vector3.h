@@ -11,13 +11,12 @@ public:
 	//コンストラクタ
 	Vector3();
 	Vector3(float x, float y, float z);
-	~Vector3();
 
 	//メンバ関数
 	float length() const;//ノルム(長さ)を求める
 	Vector3& normalize();//正規化する
 	float dot(const Vector3& v)const;//内積を求める
-	float cross(const Vector3& v)const; //外積を求める
+	Vector3 cross(const Vector3& v)const; //外積を求める
 
 	//単項演算子オーバーロード
 	Vector3 operator+() const;
